@@ -7,23 +7,16 @@ import time
 """
 # Welcome to the Cobbles shop app!
 """
-st.title("Cobbles App")
+#st.title("Cobbles App")
 st.header('Widgets')
 
-d = st.date_input(
+add_selectbox = st.date_input(
      "Enter the date you wish to predict",
      datetime.date(2020,3,21))
-st.write("You chose:", d)
 
-option1 = st.selectbox(
+add_selectbox = st.selectbox(
      "What is today's weather like?",
      ('Sunny', 'Cloudy', 'Rainy'))
-     
-option2 = st.selectbox("Is it a bank holiday today?",('No','Yes'))
-                     
-option3 = st.selectbox("Is there a special event today?",('No','Yes'))
-     
-st.write("You chose: ", option1, option2, option3)
 
 add_selectbox = st.sidebar.selectbox(
     "Is it a bank holiday?",
