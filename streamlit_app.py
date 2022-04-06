@@ -10,11 +10,11 @@ import time
 #st.title("Cobbles App")
 st.header('Widgets')
 
-add_selectbox = st.date_input(
+add_selectbox = st.sidebar.date_input(
      "Enter the date you wish to predict",
      datetime.date(2020,3,21))
 
-add_selectbox = st.selectbox(
+add_selectbox = st.sidebar.selectbox(
      "What is today's weather like?",
      ('Sunny', 'Cloudy', 'Rainy'))
 
